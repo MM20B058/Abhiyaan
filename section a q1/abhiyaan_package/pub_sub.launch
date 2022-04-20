@@ -1,0 +1,4 @@
+<launch>
+    <node name="publisher" pkg="abhiyaan_package" type="publisher" output="screen"></node>
+    <node name="subscriber" pkg="abhiyaan_package" type="subscriber" output="screen"></node>
+</launch>
