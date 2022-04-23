@@ -7,7 +7,7 @@ float x,y,alpha,beta,r;
 void func(const turtlesim::Pose& msg){
     x = msg.x;                       
     y = msg.y;                       
-    beta = msg.theta;                  
+    beta = msg.alpha;                  
     r = 2*pow((pow((x-5.5),2)+pow((y-5.5),2)),0.5);
     alpha = acos(sqrt(2)*(1-(2/r)));
     if(y < 5.5)
