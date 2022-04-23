@@ -8,7 +8,7 @@ void func(const turtlesim::Pose& msg){
     x = msg.x;                       
     y = msg.y;                       
     beta = msg.alpha;                  
-    r = 2*pow((pow((x-5.5),2)+pow((y-5.5),2)),0.5);
+    r = 2*sqrt(pow((x-5.5),2)+pow((y-5.5),2));
     alpha = acos(sqrt(2)*(1-(2/r)));
     if(y < 5.5)
         alpha = 2*pi - alpha;
